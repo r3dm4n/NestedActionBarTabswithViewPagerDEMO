@@ -9,28 +9,18 @@ android:fitsSystemWindows="false"
 tools:context="com.r3dm4n.nestedactionbartabswithviewpagerdemo.Tab2Fragment">
 
 <android.support.v4.view.ViewPager
-    android:id="@+id/container_main"
+android:id="@+id/container_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_scrollFlags="scroll|enterAlways"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<android.support.design.widget.TabLayout
+    android:id="@+id/tabs2"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_scrollFlags="scroll|enterAlways"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabs2"
-        android:background="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:layout_scrollFlags="scroll|enterAlways"
-        app:popupTheme="@style/AppTheme.PopupOverlay">
-
-    </android.support.v7.widget.Toolbar>
+    android:layout_height="wrap_content" />
 
 </android.support.v4.view.ViewPager>
 
-</android.support.design.widget.CoordinatorLayout>
+    </android.support.design.widget.CoordinatorLayout>
